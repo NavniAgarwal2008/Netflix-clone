@@ -1,0 +1,213 @@
+/* Reset */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background-color: #000;
+  color: #fff;
+}
+
+/* Header */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  color: red;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.nav-right {
+  display: flex;
+  gap: 15px;
+}
+
+.language {
+  padding: 6px;
+  border-radius: 4px;
+  border: none;
+}
+
+.signin-btn {
+  background: red;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  height: 100vh; /* full screen height */
+  background: url('https://tse2.mm.bing.net/th/id/OIP.c8qeLW3N9SrdaVGvI-LLnAHaEI?r=0&rs=1&pid=ImgDetMain&o=7&rm=3') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Overlay for opacity */
+.overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.6); /* dark transparent layer */
+}
+
+.hero-text {
+  position: relative;
+  z-index: 5;
+  max-width: 600px;
+  padding: 20px;
+}
+
+.hero-text h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.signup-box {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.signup-box input {
+  padding: 12px;
+  width: 300px;
+  border: none;
+  border-radius: 4px;
+}
+
+.get-started {
+  background: red;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .hero-text h1 {
+    font-size: 32px;
+  }
+  .hero-text p {
+    font-size: 16px;
+  }
+  .signup-box input {
+    width: 100%;
+  }
+}
+
+
+
+.card-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #222;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 200px;
+  transition: transform 0.3s;
+}
+
+.card img {
+  width: 100%;
+  display: block;
+}
+
+.card h3 {
+  padding: 10px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.faq {
+  background: #222;
+  border-radius: 8px;
+  padding: 30px;
+}
+
+.faq h2 {
+  margin-bottom: 20px;
+}
+
+.faq-item {
+  margin-bottom: 15px;
+  background: #333;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.faq-item summary {
+  cursor: pointer;
+  font-weight: bold;
+  color: #fff;
+}
+
+.faq-item p {
+  margin-top: 10px;
+  color: #ccc;
+}
+
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+}
+
+.contact input, .contact textarea {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.contact button {
+  padding: 10px;
+  background: red;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+footer {
+  background: #000;
+  text-align: center;
+  padding: 20px;
+}
+
+.footer-logo {
+  color: red;
+  font-size: 24px;
+  font-weight: bold;
+}
